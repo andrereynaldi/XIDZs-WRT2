@@ -25,7 +25,7 @@ declare -a packages_custom
 packages_custom+=(
     "modeminfo_|${REPOS[KIDDIN9]}"
     "luci-app-modeminfo_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-fm350_|${REPOS[DLLKIDS]}"
+    #"modeminfo-serial-fm350_|${REPOS[DLLKIDS]}"
     "modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     "modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
     "modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"
@@ -68,9 +68,6 @@ packages_custom+=(
     "luci-app-droidnet_|https://api.github.com/repos/animegasan/luci-app-droidmodem/releases/latest"
     "luci-theme-alpha_|https://api.github.com/repos/derisamedia/luci-theme-alpha/releases/latest"
     "luci-app-tailscale_|https://api.github.com/repos/asvow/luci-app-tailscale/releases/latest"
-    #"atc-fib-fm350_gl_|https://github.com/de-quenx/openwrt/blob/master/atc/fib-fm350_gl/"
-    #"atc-fib-l850_gl_|https://github.com/de-quenx/openwrt/blob/master/atc/fib-l850_gl/"
-    #"luci-proto-atc_|https://github.com/de-quenx/openwrt/blob/master/atc/"
     #"luci-app-rakitanmanager_|https://api.github.com/repos/rtaserver/RakitanManager/releases/latest"
     "luci-app-ipinfo_|https://api.github.com/repos/bobbyunknown/luci-app-ipinfo/releases/latest"
 )
