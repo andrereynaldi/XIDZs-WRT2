@@ -21,25 +21,11 @@ PACKAGES+=" zram-swap adb screen htop lolcat uhttpd uhttpd-mod-ubus"
 PACKAGES+=" luci luci-base luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
 
 # Hardware support - USB and LAN networking drivers
-PACKAGES+=" kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 kmod-usb-net-asix kmod-usb-net-asix-ax88179"
-PACKAGES+=" kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan uqmi"
-PACKAGES+=" kmod-usb-net-cdc-ether kmod-usb-acm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim umbim"
-PACKAGES+=" kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless mbim-utils qmi-utils"
-PACKAGES+=" libmbim libqmi modemmanager luci-proto-modemmanager luci-proto-qmi luci-proto-ncm usbutils xmm-modem"
-PACKAGES+=" atc-fib-l850_gl atc-fib-fm350_gl luci-proto-atc kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb-ehci"
-PACKAGES+=" kmod-usb3 usb-modeswitch kmod-nls-utf8 kmod-macvlan"
-
-# Modem management tools
-PACKAGES+=" modeminfo luci-app-modeminfo atinout modemband luci-app-modemband sms-tool luci-app-sms-tool-js picocom minicom"
-
-# ModemInfo serial support
-PACKAGES+=" modeminfo-serial-tw modeminfo-serial-dell modeminfo-serial-xmm modeminfo-serial-fibocom modeminfo-serial-sierra"
-
-# VPN tunnel packages
-OPENCLASH="coreutils-nohup bash ca-certificates ipset ip-full libcap libcap-bin ruby ruby-yaml kmod-tun kmod-inet-diag kmod-nft-tproxy luci-app-openclash"
-NIKKI="nikki luci-app-nikki"
-NEKO="bash kmod-tun php8 php8-cgi luci-app-neko"
-PASSWALL="chinadns-ng resolveip dns2socks dns2tcp ipt2socks microsocks tcping xray-core xray-plugin luci-app-passwall"
+PACKAGES+=" kmod-usb-net-rtl8152"
+PACKAGES+=" kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis"
+PACKAGES+=" kmod-usb-net-cdc-ether"
+PACKAGES+=" kmod-usb2"
+PACKAGES+=" kmod-usb3 usb-modeswitch"
 
 add_tunnel_packages() {
     local option="$1"
@@ -65,21 +51,15 @@ PACKAGES+=" kmod-usb-storage kmod-usb-storage-uas ntfs-3g luci-app-diskman"
 # Monitoring - Autorekonek
 PACKAGES+=" internet-detector luci-app-internet-detector vnstat2 vnstati2 luci-app-netmonitor"
 
-# Remote access
-PACKAGES+=" tailscale luci-app-tailscale"
-
-# Bandwidth
-PACKAGES+=" speedtest-cli luci-app-eqosplus"
-
 # Theme - UI
-PACKAGES+=" luci-theme-argon luci-theme-material"
+PACKAGES+=" luci-theme-argon"
 
 # PHP packages
 PACKAGES+=" php8 php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia"
 
 # Custom Packages
-PACKAGES+=" luci-app-mmconfig luci-app-droidnet luci-app-ipinfo luci-app-lite-watchdog luci-app-mactodong luci-app-poweroffdevice"
-PACKAGES+=" luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-3ginfo-lite"
+PACKAGES+=" luci-app-ipinfo luci-app-mactodong luci-app-poweroffdevice"
+PACKAGES+=" luci-app-ramfree luci-app-tinyfm luci-app-ttyd"
 
 # Profil Name
 configure_profile_packages() {
