@@ -15,17 +15,16 @@ PACKAGES=""
 EXCLUDED=""
 
 # Base - Core - Luci
-PACKAGES+=" libc bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty curl"
-PACKAGES+=" wget-ssl jq httping tar unzip parted resize2fs losetup"
-PACKAGES+=" zram-swap adb screen htop lolcat uhttpd uhttpd-mod-ubus"
+PACKAGES+=" libc bash block-mount coreutils-stat coreutils-stty"
+PACKAGES+=" wget-ssl unzip parted resize2fs losetup"
+PACKAGES+=" zram-swap adb lolcat uhttpd uhttpd-mod-ubus"
 PACKAGES+=" luci luci-base luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"
 
 # Hardware support - USB and LAN networking drivers
 PACKAGES+=" kmod-usb-net-rtl8152"
-PACKAGES+=" kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis"
-PACKAGES+=" kmod-usb-net-cdc-ether"
+PACKAGES+=" kmod-usb-net kmod-usb-net-rndis"
 PACKAGES+=" kmod-usb2"
-PACKAGES+=" kmod-usb3 usb-modeswitch"
+PACKAGES+=" kmod-usb3"
 
 add_tunnel_packages() {
     local option="$1"
@@ -55,7 +54,7 @@ PACKAGES+=" internet-detector luci-app-internet-detector vnstat2 vnstati2 luci-a
 PACKAGES+=" luci-theme-argon"
 
 # PHP packages
-PACKAGES+=" php8 php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia"
+PACKAGES+=" php8 php8-fastcgi php8-mod-session php8-mod-fileinfo php8-mod-zip php8-mod-mbstring php8-mod-json php8-mod-gd"
 
 # Custom Packages
 PACKAGES+=" luci-app-ipinfo luci-app-mactodong luci-app-poweroffdevice"
