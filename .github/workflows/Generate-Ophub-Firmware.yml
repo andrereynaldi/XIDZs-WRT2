@@ -185,10 +185,8 @@ jobs:
           body: |
             ## XIDZs-WRT INFORMATION ##
             - Default IP: 192.168.1.1
-            - Default username: root
-            - Default password: xyyraa
-            - Default WIFI: XIDZs-WRT | XIDZs-WRT_5G
-            - Default WIFI Password: None         
+            - Default username: admin
+            - Default password: 123456879      
             ## Supported Devices ##
             ## Amlogic Series
             - **S905**: MXQ-Pro+
