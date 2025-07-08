@@ -54,7 +54,7 @@ PACKAGES+=" internet-detector luci-app-internet-detector vnstat2 vnstati2 luci-a
 PACKAGES+=" luci-theme-argon"
 
 # PHP packages
-PACKAGES+=" php8 php8-fastcgi php8-mod-session php8-mod-fileinfo php8-mod-zip php8-mod-mbstring php8-mod-json php8-mod-gd"
+PACKAGES+=" php8 php8-fastcgi php8-mod-session php8-mod-fileinfo php8-mod-zip php8-mod-mbstring"
 
 # Custom Packages
 PACKAGES+=" luci-app-ipinfo luci-app-mactodong luci-app-poweroffdevice"
